@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="styles/estilo.css" />
+         <style type="text/css">
+            .ui-widget {
+                font-size: 12px !important;
+            }
+        </style>
+    </h:head> 
+
+
+    <h:body>
+        <h:form id="frmlogin">
+            <p:growl id="growl" sticky="true" showDetail="true" life="3000" />
+            <div id="msg1">
+                Seja Bem vindo
+            </div><br/>
+            <div id="msg2">
+                Identifique-se por favor para utilizar
+                o sistema.
+            </div><br/>
+            <h:panelGrid id="idpnllogin" class="panelGridCenter" columns="2" cellpadding="5">
+                <h:outputLabel for="username" value="Username:" />
+                <p:inputText id="username" value="#{TabUsuBean.tabusu.nome}" required="true" label="username" onkeyup="this.value = this.value.toString().toUpperCase();"/>
+
+                <h:outputLabel for="password" value="Password:" />
+                <p:password id="password" value="#{TabUsuBean.tabusu.senha}" required="true" label="password" />
+
+                <f:facet name="footer">
+                    <p:commandButton value="Login" update="growl" action="#{TabUsuBean.BtnLogarUsuario(TabUsuBean.tabusu)}" />
+                </f:facet>
+            </h:panelGrid>
+
+            <div id="divimg">
+                <f:view >
+                    <p:graphicImage id="grpimglogin" class="imglogin" value="imagens/Logo menor.png" width="150" height="150" />
+                </f:view>
+            </div>
+
+        </h:form>
+    </h:body>
+
+
+</html>
+

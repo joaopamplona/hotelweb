@@ -1,0 +1,95 @@
+
+* {
+    margin:0;
+    padding:0;
+}
+
+#frmlogin{
+    float: left;
+    width: 520px;
+    height: 250px;
+    border: 2px solid #6495ED;
+    padding: 10px;
+    margin-top: 130px;
+    margin-left: 400px;
+    text-align: left;
+    font-family: calibri;
+    font-size: 13px;
+    border-radius: 50px;
+    font-family: "Tahoma";
+}
+
+
+.panelGridCenter {
+    margin: 73px 0px 10px 15px;
+}
+
+.imglogin{
+    margin: -168px 79px 16px 342px;
+    height: 150px;
+    width: 150px;
+}
+
+#divimg{
+    margin: -41px 0px 0px 0px;
+}
+
+#msg1 {
+    float: left;
+    padding: 10px;
+    font-family: Cambria;
+    font-size: 35px;
+    font-style: 200;
+    color: #6495ED;
+    text-align: left;
+    
+}
+
+#msg2 {
+    float: left;
+    padding: 10px;
+    font-family: calibri;
+    font-size: 15px;
+    font-style: 100;
+    color: #6495ED;
+    font-size: 18px;
+    text-align: left;
+    margin: 36px -1px 7px -248px;
+}
+
+/*  ----------------------principal------------------- */
+#topo {
+   margin-top: 0px;
+}
+
+.ui-menubar {
+    width: auto;
+}
+
+
+.rodape {
+    background: #00135A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer{
+    margin-top:1px;
+}
+
+#conteudo{
+    border: 2px solid #6495ED;
+    width: 1340px;
+    height: 532px;
+    padding: 10px;
+    margin-top: 1px;
+    margin-left: 1px;
+    
+}
+
+.imgprincipal{
+    margin: 10px 75px -179px 0;
+    height: 532px;
+    width: 1275px;
+}
